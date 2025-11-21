@@ -1,94 +1,94 @@
-* {
+/* RESET CSS*/
+
+*{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-body {
-    font-family: 'Arial', Helvetica, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+blockquote, q{
+    quotes: none;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+
+/* 2. ESTILOS GERAIS */
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 40px 20px;
 }
 
-.title {
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+} 
+
+.section-title{
+    font-size: 2rem;
     text-align: center;
+    color: #343a40;
     margin-bottom: 40px;
 }
 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
+/*3. LAYOUT DA SEÇÃO */
 
-.terminal-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.card{
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container-information {
-    margin-bottom: 15px;
+.testimonial-grids{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.testimonial-avatar {
+/* 4. ESTILO DO DEPOIMENTO */
+
+.testimonial-card{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+
+/* 5. ESTILOS DOS ELEMENTOS DENTRO DO CARD */
+
+.testimonial-avatar{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3.5px solid #1B9BFA;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #e9ecef;
 }
 
-.testimonial-quote {
+
+.testimonial-quote{
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
     font-style: italic;
-    margin-bottom: 15px;
-    color: #666;
-    font-size: 1.1em;
-    line-height: 1.4;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border-left: 4px solid #1B9BFA;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-
+    margin: 0;
 }
 
-.testimonial-author {
+.testimonial-author{
+    display: block;
+    margin-top: 20px;
     font-weight: bold;
-    color: #555;
+    font-style: normal;
+    color: #495057;
 }
 
 .testimonial-role {
-    color: #888;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    color: #adb5bd;
+    margin-top: 5px;
+
 }
+
